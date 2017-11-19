@@ -1,8 +1,11 @@
 
 # 面试题
 
-该项目通过 `create-react-app` 脚手架生成,
-可以clone当前项目或者通过 `create-react-app my-app --scripts-version=mxcins-react-scripts` 生成基础项目结构.
+该项目通过 `create-react-app` 脚手架生成,可以fork当前项目或者通过 `create-react-app my-app --scripts-version=mxcins-react-scripts` 生成基础项目结构.
+
+实现功能要求区分功能及模块commit代码, 完成之后将仓库地址发送到 mxcins@gmail.com
+
+
 
 ### 要求
 
@@ -32,4 +35,4 @@ email: { type: 'email', max-length: 100, required }
 
 可以使用第三方库
 
-any question: mxcins@mail.com
+any question: mxcins@gmail.com
