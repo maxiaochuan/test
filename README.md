@@ -1,5 +1,5 @@
 
-# 面试题
+# 笔试题
 
 该项目通过 `create-react-app` 脚手架生成,可以fork当前项目或者通过 `create-react-app my-app --scripts-version=mxcins-react-scripts` 生成基础项目结构.
 
