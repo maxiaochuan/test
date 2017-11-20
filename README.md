@@ -1,13 +1,11 @@
 
-# 面试题
+# 笔试题
 
-该项目通过 `create-react-app` 脚手架生成,可以fork当前项目或者通过 `create-react-app my-app --scripts-version=mxcins-react-scripts` 生成基础项目结构.
+请fork本项目到自己的仓库中,并在此基础上进行开发
 
-实现功能要求区分功能及模块commit代码, 完成之后将仓库地址发送到 mxcins@gmail.com
+按要求实现功能,并分阶段提交commit
 
-
-
-### 要求
+### 功能要求
 
 #####  完成关于用户信息的CURD页面
 
