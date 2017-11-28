@@ -1,4 +1,5 @@
 import HomeView from 'view/home'
+import UserInfo from 'view/users'
 
 export default [
   {
@@ -6,5 +7,11 @@ export default [
     name: 'home',
     path: '/',
     component: HomeView,
+  },
+  {
+    exact: false,
+    name: 'user',
+    path: '/:id',
+    component: UserInfo,
   }
 ]
