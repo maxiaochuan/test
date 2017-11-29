@@ -5,6 +5,7 @@ import createHistory from 'history/createBrowserHistory'
 import createStore from 'store'
 import registerServiceWorker from './registerServiceWorker'
 
+
 const environment = window || this
 
 const historyConfig = {
@@ -18,6 +19,8 @@ const initialState = environment.__INITIAL_STATE__
 
 const store = createStore(initialState, history)
 
+window.store=store;
+
 const MOUNT_NODE = document.getElementById('__content')
 
 ReactDOM.render(
@@ -29,7 +32,8 @@ if (module.hot) {
   module.hot.accept('./App', () => {
     const NextApp = require('./App').default
     ReactDOM.render(
-      <NextApp store={store} historyConfig={historyConfig}></NextApp>,
+      <NextApp store={store} historyConfig={historyConfig}>
+      </NextApp>,
       MOUNT_NODE
     )
   })

@@ -3,10 +3,13 @@
  */
 import { combineReducers } from 'redux'
 import numberReducer from './number'
-
+import usersReducer from './users'
+import {routerReducer} from 'react-router-redux';
 export const makeRootReducer = asyncReducers => {
   return combineReducers({
     num: numberReducer,
+    users:usersReducer,
+    routing :routerReducer,
     ...asyncReducers,
   })
 }
