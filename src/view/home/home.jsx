@@ -1,7 +1,7 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 import * as axios from '../../api'
-
+import { Link } from 'react-router-dom'
 class HomeView extends React.Component {
   constructor(props) {
     super(...arguments)
@@ -85,7 +85,6 @@ class HomeView extends React.Component {
     const { list } = this.state
     return (
       <div>
-        <div>点击name进入</div>
         <div>
           name:<input type="text"  onChange={ (e) =>this.handleChangeName(e) } value={this.state.name}/>
           email:<input type="email" onChange={ (e) =>this.handleChangeEmail(e) } value={this.state.email}/>
@@ -95,10 +94,16 @@ class HomeView extends React.Component {
             list && list.map((v,index) =>(
               <li key={index}>
                   <div>id: {v.id}</div>
-                  <div>name: <span>{v.name}</span></div> 
+                  <div>
+                    <Link  to={{
+                            pathname: `/${v.id}`,
+                        }}>
+                        name: <span>{v.name}</span>
+                    </Link>
+                  </div> 
                   <div>email: <span>{v.email}</span></div>
                   <div>
-                    <span onClick={() => this.removeUser(index) }>删除</span>  
+                    <span onClick={() => this.removeUser(index) }>删除 </span>  
                     <span onClick={() => this.updateuser(index) }>更新</span>
                   </div>
               </li>
