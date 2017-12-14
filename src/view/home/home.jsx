@@ -86,6 +86,13 @@ class HomeView extends React.Component {
     return (
       <div>
         <div>
+          <Link to={{
+                  pathname: `/create`,
+              }}>
+              新建用户
+          </Link>
+        </div>
+        <div>
           name:<input type="text"  onChange={ (e) =>this.handleChangeName(e) } value={this.state.name}/>
           email:<input type="email" onChange={ (e) =>this.handleChangeEmail(e) } value={this.state.email}/>
         </div>
@@ -96,7 +103,7 @@ class HomeView extends React.Component {
                   <div>id: {v.id}</div>
                   <div>
                     <Link  to={{
-                            pathname: `/${v.id}`,
+                            pathname: `/user/${v.id}`,
                         }}>
                         name: <span>{v.name}</span>
                     </Link>

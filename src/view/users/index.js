@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import * as axios from '../../api'
-const userinfo = null
 
 class Topic extends Component {
   constructor(props) {

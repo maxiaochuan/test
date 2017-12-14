@@ -20,3 +20,8 @@ export const AxiosUpdateUser = (id, datas) => {
     let path = `users/${id}`
     return put(path, datas)
 }
+
+export const AxiosCreateUser = (datas) => {
+    let path = `users`
+    return post(path, datas)
+}
